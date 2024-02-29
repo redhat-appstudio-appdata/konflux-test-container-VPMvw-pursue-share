@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: konflux-test-container
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/tmlcoch-tenant/konflux-test-container/konflux-test-container@sha256:aadb76e283307d50dcbedc6c72b53a62e25908d04ba1c09b2c82495c9cfdbe18
+        name: container-image
+        resources: {}
+status: {}
