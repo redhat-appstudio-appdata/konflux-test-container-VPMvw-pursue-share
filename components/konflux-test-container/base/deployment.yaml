@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: konflux-test-container
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/tmlcoch-tenant/konflux-test-container/konflux-test-container@sha256:aadb76e283307d50dcbedc6c72b53a62e25908d04ba1c09b2c82495c9cfdbe18
         imagePullPolicy: Always
         name: container-image
         ports:
